@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="#" style="font-weight: bold; margin: 0 80px;">Elysian Bites</a>
+                <div class="mx-auto" style="flex: 1; text-align: center; margin: 0 80px; ">
+                    <form class="d-flex" style="max-width: 600px; display: inline-block;">
+                        <input class="form-control me-2" type="search" placeholder="Search menu..." aria-label="Search">
+                        <button class="btn search-btn" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#site-footer" style="margin-right: 80px;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home" style="margin: 0 80px;">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="1.png" class="d-block w-100 custom-carousel-height" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="font-weight: 500;">Kemewahan Kuliner di Puncak Kota</h1>
+                        <p>“Nikmati hidangan mewah dengan pemandangan kota yang menakjubkan.”</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="2.png" class="d-block w-100 custom-carousel-height" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="font-weight: 500;">Elegansi Rasa dalam Setiap Hidangan</h1>
+                        <p>“Setiap gigitan adalah perpaduan sempurna antara rasa dan keanggunan.”</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="3.png" class="d-block w-100 custom-carousel-height" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="font-weight: 500;">Pengalaman Bersantap yang Tak Tertandingi</h1>
+                        <p>“Rasakan pengalaman kuliner yang luar biasa, hanya di sini.”</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button">
+              <div class="image-wrapper">
+                <img src="7.png" alt="Image 1">
+                <span class="button-text">Foods</span>
+              </div>
+            </a>
+            <a href="#" class="button">
+              <div class="image-wrapper">
+                <img src="8.png" alt="Image 2">
+                <span class="button-text">Snacks</span>
+              </div>
+            </a>
+            <a href="#" class="button">
+              <div class="image-wrapper">
+                <img src="9.png" alt="Image 3">
+                <span class="button-text">Drinks</span>
+              </div>
+            </a>
+          </div>
+          
+    </section>
+    <section id="About">
+      <div class="container" style="margin: 80px;">
+        <div class="row row-cols-2">
+            <div class="col-8" style="margin-top: 100px;">
+                <a href="#" class="group relative block">
+                    <div class="image-container">
+                      <img
+                        alt=""
+                        src="4.png"
+                        class="responsive-image"
+                      />
+                      <div class="overlay">
+                        <p class="overlay-text">Foods</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="group relative block">
+                    <div class="image-containerr">
+                      <img
+                        alt=""
+                        src="5.png"
+                        class="responsive-imagee"
+                      />
+                      <div class="overlayy">
+                        <p class="overlay-textt">Snacks</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="group relative block">
+                    <div class="image-containerrr">
+                      <img
+                        alt=""
+                        src="6.png"
+                        class="responsive-imageee"
+                      />
+                      <div class="overlayyy">
+                        <p class="overlay-texttt">Drinks</p>
+                      </div>
+                    </div>
+                  </a>
+              </div>
+          <div class="col-4" >
+            <h1 style="font-size: 50px; text-align: center; margin-top: 100px; margin-bottom: 50px; font-weight: bold;">About Us</h1>
+            <p style="justify-items: center;  display: flex;  font-size: large; font-weight: 500;">Welcome to Elysian Bites, where culinary excellence meets warm hospitality. Our story is one of passion, dedication, and a commitment to delivering an exceptional dining experience to our cherished guests. <br>Our menu is a testament to our culinary philosophy, featuring a diverse range of dishes that cater to all tastes. From classic favorites to innovative creations, each dish is prepared with the utmost care and attention to detail. We also offer a selection of fine wines and handcrafted cocktails to complement your meal perfectly.</p>
+            <button class="join-button">
+                <a href="#About" style="text-decoration: none;">Join Us</a>
+            </button>
+        </div>
+
+      </div>
+    </section>
+    <section id="ourteam" style="height: 500px; margin: 80px;">
+        <div class="container mt-5">
+            <h1 class="text-center" style="font-weight: bold; margin-bottom: 90px">Our Team</h1>
+            <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="orang1.png" class="card-img-top" alt="Team Member 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">John Doe (Head Chef)</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="orang2.png" class="card-img-top" alt="Team Member 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bob Brown (Asisten Chef)</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="orang3.png" class="card-img-top" alt="Team Member 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alice Johnson (Head Manager)</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="orang4.png" class="card-img-top" alt="Team Member 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jane Smith (delivery staff)</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="orang5.png" class="card-img-top" alt="Team Member 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jeane (cashier)</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="orang6.png" class="card-img-top" alt="Team Member 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Daisy Wilson ()</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="order" style="display: flex; justify-content: center; align-items: center; height: 900px; position: relative; overflow: hidden;">
+        <img src="Rectangle 71.png" alt="" style="width: 100%; height: auto; position: absolute; top: 0; left: 0;">
+        <a href="makanan.html" style="color: rgb(170, 168, 168); text-decoration: underline; z-index: 1;">
+            <h3 style="font-size: 30px;">Order Now</h3>
+        </a>
+    </section>
+<footer id="site-footer" style="background-color: #E6E3C8;">
+    <div class="bg-success bg-opacity-25 py-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <h5 class="pb-3"><i class="fa-solid fa-user-group pe-1"></i> About us</h5>
+                    <span class="text-secondary">This is a wider card with supporting text below as a natural lead-in to additional content.</span>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <h5 class="pb-3"><i class="fa-solid fa-link pe-1"></i> Important links</h5>
+                    <ul>
+                        <li><a href="#" class="text-decoration-none link-secondary">About us</a></li>
+                        <li><a href="#" class="text-decoration-none link-secondary">Privacy policy</a></li>
+                        <li><a href="#" class="text-decoration-none link-secondary">Terms of services</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <h5 class="pb-3"><i class="fa-solid fa-location-dot pe-1"></i> Our location</h5>
+                    <span class="text-secondary">
+                        Milannagar bazar<br>
+                        Tamluk, East Medinipore, West Bengal<br>
+                        721627, India<br>
+                    </span>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <h5 class="pb-3"><i class="fa-solid fa-paper-plane pe-1"></i> Stay updated</h5>
+                    <form>
+                        <input type="text" class="w-100 mb-2 form-control" name="" placeholder="Email ID">
+                        <button class="w-100 btn btn-dark">Subscribe now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12"><span class="text-secondary pt-1 float-md-end float-sm-start">Copyright &copy; 2023</span></div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>
