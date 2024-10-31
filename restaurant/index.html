@@ -11,27 +11,31 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="#" style="font-weight: bold; margin: 0 80px;">Elysian Bites</a>
-                <div class="mx-auto" style="flex: 1; text-align: center; margin: 0 80px; ">
-                    <form class="d-flex" style="max-width: 600px; display: inline-block;">
-                        <input class="form-control me-2" type="search" placeholder="Search menu..." aria-label="Search">
-                        <button class="btn search-btn" type="submit">Search</button>
-                    </form>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <!-- Logo di bagian atas dan tanpa margin saat di ponsel -->
+                <div class="logo-container logo-margin">
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="logo.png" alt="Logo" class="logo-img">
+                    </a>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Home" >Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#About">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#site-footer" style="margin-right: 80px;">Contact</a>
-                        </li>
-                    </ul>
+                
+                <!-- Navbar Links -->
+                <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#Home" style="font-size: 20px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#About" style="font-size: 20px;">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#site-footer" style="font-size: 20px;">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Login Button di bagian bawah dan tanpa margin saat di ponsel -->
+                <div class="login-margin">
+                    <button class="btn btn-outline-light" type="button">Login</button>
                 </div>
             </div>
         </nav>
@@ -140,26 +144,30 @@
                     </div>
                   </a>
               </div>
-          <div class="col-4" >
-            <h1 style="font-size: 50px; text-align: center; margin-top: 100px; margin-bottom: 50px; font-weight: bold;">About Us</h1>
-            <p style="justify-items: center;  display: flex;  font-size: large; font-weight: 500;">Welcome to Elysian Bites, where culinary excellence meets warm hospitality. Our story is one of passion, dedication, and a commitment to delivering an exceptional dining experience to our cherished guests. <br>Our menu is a testament to our culinary philosophy, featuring a diverse range of dishes that cater to all tastes. From classic favorites to innovative creations, each dish is prepared with the utmost care and attention to detail. We also offer a selection of fine wines and handcrafted cocktails to complement your meal perfectly.</p>
-            <button class="join-button">
-                <a href="#About" style="text-decoration: none;">Join Us</a>
-            </button>
-        </div>
+              <div class="col-12 col-md-4">
+                <h1 class="text-center" style="font-size: 2.5rem; margin-top: 100px; margin-bottom: 50px; font-weight: bold;">About Us</h1>
+                <p style="font-size: 1.125rem; font-weight: 500; text-align: justify;">
+                    Welcome to Elysian Bites, where culinary excellence meets warm hospitality. Our story is one of passion, dedication, and a commitment to delivering an exceptional dining experience to our cherished guests. 
+                    <br>Our menu is a testament to our culinary philosophy, featuring a diverse range of dishes that cater to all tastes. From classic favorites to innovative creations, each dish is prepared with the utmost care and attention to detail. 
+                    We also offer a selection of fine wines and handcrafted cocktails to complement your meal perfectly.
+                </p>
+                <button class="join-button">
+                    <a href="#site-footer" style="text-decoration: none;">Join Us</a>
+                </button>
+            </div>
+            
 
       </div>
     </section>
     <section id="ourteam" style="height: 500px; margin: 80px;">
         <div class="container mt-5">
-            <h1 class="text-center" style="font-weight: bold; margin-bottom: 90px">Our Team</h1>
+            <h1 class="text-center" style="font-weight: bold; margin-bottom: 50px; font-size: 50px;">Our Team</h1>
             <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="card">
-                                    <img src="orang1.png" class="card-img-top" alt="Team Member 1">
+                                <div class="card team-card" style="background-image: url('orang1.png');">
                                     <div class="card-body">
                                         <h5 class="card-title">John Doe (Head Chef)</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -167,8 +175,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
-                                    <img src="orang2.png" class="card-img-top" alt="Team Member 2">
+                                <div class="card team-card" style="background-image: url('orang2.png');">
                                     <div class="card-body">
                                         <h5 class="card-title">Bob Brown (Asisten Chef)</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -176,8 +183,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
-                                    <img src="orang3.png" class="card-img-top" alt="Team Member 3">
+                                <div class="card team-card" style="background-image: url('orang3.png');">
                                     <div class="card-body">
                                         <h5 class="card-title">Alice Johnson (Head Manager)</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -189,8 +195,7 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="card">
-                                    <img src="orang4.png" class="card-img-top" alt="Team Member 4">
+                                <div class="card team-card" style="background-image: url('orang4.png');">
                                     <div class="card-body">
                                         <h5 class="card-title">Jane Smith (delivery staff)</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -198,8 +203,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
-                                    <img src="orang5.png" class="card-img-top" alt="Team Member 5">
+                                <div class="card team-card" style="background-image: url('orang5.png');">
                                     <div class="card-body">
                                         <h5 class="card-title">Jeane (cashier)</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -207,10 +211,9 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
-                                    <img src="orang6.png" class="card-img-top" alt="Team Member 6">
+                                <div class="card team-card" style="background-image: url('orang6.png');">
                                     <div class="card-body">
-                                        <h5 class="card-title">Daisy Wilson ()</h5>
+                                        <h5 class="card-title">Daisy Wilson</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     </div>
                                 </div>
@@ -229,8 +232,13 @@
             </div>
         </div>
     </section>
+    
+    
+    
+
+    
     <section id="order" style="display: flex; justify-content: center; align-items: center; height: 900px; position: relative; overflow: hidden;">
-        <img src="Rectangle 71.png" alt="" style="width: 100%; height: auto; position: absolute; top: 0; left: 0;">
+        <img src="Rectangle 71.png" alt="" style="width: 100%; height: auto; position: absolute; top: 0; left: 0;margin-top: 100px;">
         <a href="makanan.html" style="color: rgb(170, 168, 168); text-decoration: underline; z-index: 1;">
             <h3 style="font-size: 30px;">Order Now</h3>
         </a>
